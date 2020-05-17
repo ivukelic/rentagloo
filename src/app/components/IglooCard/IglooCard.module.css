@@ -1,0 +1,43 @@
+.container {
+    font-family: 'Jost', sans-serif;
+    border: none;
+    width: 500px;
+    height: 200px;
+    display: flex;
+}
+
+.left {
+}
+
+.pic {
+    max-height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.top {
+}
+
+.bottom {
+    background-color: #ccd6eb86;
+    border-bottom-right-radius: 5px;
+}
+
+.button {
+    border: none;
+    font-family: 'Jost', sans-serif;
+    background-color: #a72b8e;
+    color: white;
+    border-radius: 10px;
+    margin-left: 44px;
+    text-transform: uppercase;
+}
