@@ -1,9 +1,10 @@
 import React from 'react';
 import Button from '../Button/Button';
+import styles from './Navigation.module.css';
 
 const Navigation = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.nav}>
             <div>
                 <Button to="/igloos">Igloos</Button>
             </div>

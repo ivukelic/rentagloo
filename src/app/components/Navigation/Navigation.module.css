@@ -1,0 +1,18 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #373737;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+
+    box-shadow: 0 0 5px 0 rgb(151, 151, 151);
+}
+
+.navItem {
+    padding: 10px;
+    color: #b64fc8;
+    text-decoration: none;
+}
