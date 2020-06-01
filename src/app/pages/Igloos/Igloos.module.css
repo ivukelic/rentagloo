@@ -1,7 +1,12 @@
+@import '../../utils/colorTheme.module.css';
+
 .container {
     display: flex;
     flex-direction: column;
-    background-color: #16162e;
+    background-color: var(--dark-blue);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
 }
 
 .slideshow {
@@ -9,34 +14,75 @@
     flex-direction: row;
     justify-content: center;
     place-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-.btnLeft {
+.btnScroll {
+    height: 50px;
+    width: 50px;
+    background-color: unset;
+    border: none;
+    align-self: center;
+    cursor: pointer;
 }
 
-.btnRight {
+.btnScroll:focus {
+    outline: none;
 }
 
 .picContainer {
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
+    border: none;
 }
 
 .image {
     object-fit: contain;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
+}
+
+.data {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
 }
 
 .name {
     font-family: 'Jost', sans-serif;
     font-weight: bold;
-    color: #ccd6eb;
+    color: var(--grey);
     font-size: 40px;
 }
 
 .fact {
     font-family: 'Jost', sans-serif;
-    color: #ccd6eb;
+    color: var(--grey);
     font-size: 16px;
+}
+
+.buttonContainer {
+    align-self: center;
+    margin-left: auto;
+}
+.btnReservation {
+    background-color: unset;
+    border: 2px var(--lilac) solid;
+    border-radius: 5px;
+    padding: 12px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.btnReservation:focus {
+    outline: none;
 }

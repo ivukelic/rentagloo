@@ -61,20 +61,27 @@ const Igloos = () => {
     return (
         <div className={styles.container}>
             <div className={styles.slideshow}>
-                <Button onClick={handleLeftClick} className={styles.btnLeft}>
-                    levo
+                <Button onClick={handleLeftClick} className={styles.btnScroll}>
+                    <Image src="left" />
                 </Button>
                 <div className={styles.pic}>
                     <Image className={styles.image} src={currentIgloo.pic} />
                 </div>
-                <Button onClick={handleRightClick} className={styles.btnRight}>
-                    Desno
+                <Button onClick={handleRightClick} className={styles.btnScroll}>
+                    <Image src="right" />
                 </Button>
             </div>
-            <div className={styles.info}>
-                <div className={styles.name}>{currentIgloo.name}</div>
-                <div className={styles.fact}>{currentIgloo.fact1}</div>
-                <div className={styles.fact}>{currentIgloo.fact2}</div>
+            <div className={styles.data}>
+                <div className={styles.info}>
+                    <div className={styles.name}>{currentIgloo.name}</div>
+                    <div className={styles.fact}>{currentIgloo.fact1}</div>
+                    <div className={styles.fact}>{currentIgloo.fact2}</div>
+                </div>
+                <div className={styles.buttonContainer}>
+                    <Button className={styles.btnReservation}>
+                        Click here to make reservation
+                    </Button>
+                </div>
             </div>
         </div>
     );

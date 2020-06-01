@@ -6,13 +6,20 @@ const Navigation = () => {
     return (
         <div className={styles.nav}>
             <div>
-                <Button to="/igloos">Igloos</Button>
+                <Button className={styles.logo}>Rentagloo</Button>
             </div>
             <div>
-                <Button to="/about">About</Button>
-            </div>
-            <div>
-                <Button to="/contact">Contact</Button>
+                <Button className={styles.navItem} to="/igloos">
+                    Igloos
+                </Button>
+
+                <Button className={styles.navItem} to="/about">
+                    About
+                </Button>
+
+                <Button className={styles.navItem} to="/contact">
+                    Contact
+                </Button>
             </div>
         </div>
     );
