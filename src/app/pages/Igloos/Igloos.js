@@ -36,26 +36,23 @@ const Igloos = () => {
     ];
 
     const [currentIgloo, setCurrentIgloo] = useState(igloos[0]);
-    const [currentIglooIndex, setCurrentIglooIndex] = useState(0);
 
-    //TO DO : fix click problem - needs to be clicked twice
+    var index = currentIgloo.id;
 
     const handleLeftClick = () => {
-        if (currentIglooIndex == 0) {
-            setCurrentIglooIndex(3);
+        if (index == 0) {
+            setCurrentIgloo(igloos[3]);
         } else {
-            setCurrentIglooIndex(currentIglooIndex - 1);
+            setCurrentIgloo(igloos[index - 1]);
         }
-        setCurrentIgloo(igloos[currentIglooIndex]);
     };
 
     const handleRightClick = () => {
-        if (currentIglooIndex == 3) {
-            setCurrentIglooIndex(0);
+        if (index == 3) {
+            setCurrentIgloo(igloos[0]);
         } else {
-            setCurrentIglooIndex(currentIglooIndex + 1);
+            setCurrentIgloo(igloos[index + 1]);
         }
-        setCurrentIgloo(igloos[currentIglooIndex]);
     };
 
     return (
