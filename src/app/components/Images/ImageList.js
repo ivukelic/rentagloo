@@ -5,5 +5,6 @@ import bubblegum from '../../assets/Igloo/pengu_planet-bubblegum.png';
 import stars from '../../assets/Igloo/pengu_planet-stars.png';
 import left from '../../assets/left.svg';
 import right from '../../assets/right.svg';
+import git from '../../assets/github.svg';
 
-export { pic, aurora, boba, bubblegum, stars, left, right };
+export { pic, aurora, boba, bubblegum, stars, left, right, git };

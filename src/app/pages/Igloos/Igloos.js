@@ -55,6 +55,10 @@ const Igloos = () => {
         }
     };
 
+    const handleThumbnailClick = () => {};
+
+    const thumbnails = igloos.map((igloo) => igloo.pic);
+
     return (
         <div className={styles.container}>
             <div className={styles.slideshow}>
@@ -67,6 +71,13 @@ const Igloos = () => {
                 <Button onClick={handleRightClick} className={styles.btnScroll}>
                     <Image src="right" />
                 </Button>
+            </div>
+            <div className={styles.preview}>
+                {igloos.map((igloo, index) => (
+                    <Button onClick={handleThumbnailClick(index)} key={index}>
+                        <Image src={igloo.pic} />
+                    </Button>
+                ))}
             </div>
             <div className={styles.data}>
                 <div className={styles.info}>

@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color: var(--dark-grey);
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    font-size: 18px;
+}
+
+.column {
+    text-align: center;
+    display: grid;
+    padding-bottom: 16px;
+    color: var(--lilac);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button {
+    border: none;
+    background-color: unset;
+    margin-top: 16px;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--grey);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.image {
+    height: 32px;
+}
+
+.bottom {
+    display: flex;
+    padding-right: 24px;
+}
+
+.text {
+    padding-right: 24px;
+}
