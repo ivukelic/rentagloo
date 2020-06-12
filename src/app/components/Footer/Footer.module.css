@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 32px;
-    background-color: var(--dark-grey);
+    background-color: var(--dark-violet);
 }
 
 .top {
@@ -15,6 +15,7 @@
 }
 
 .column {
+    font-family: 'Jost', sans-serif;
     text-align: center;
     display: grid;
     padding-bottom: 16px;
@@ -47,5 +48,6 @@
 }
 
 .text {
+    font-family: 'Jost', sans-serif;
     padding-right: 24px;
 }

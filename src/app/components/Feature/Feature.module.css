@@ -1,0 +1,15 @@
+.container {
+    text-align: center;
+    background-color: var(--lilac);
+    border-radius: 5px;
+}
+
+.image {
+    height: 150px;
+    padding-left: 8px;
+}
+
+.info {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+}
