@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../../components/Button/Button';
 import styles from './Igloos.module.css';
 import Image from '../../components/Images/Image';
+import { withRouter } from 'react-router-dom';
 
 const Igloos = () => {
     let igloos = [
@@ -95,4 +96,4 @@ const Igloos = () => {
     );
 };
 
-export default Igloos;
+export default withRouter(Igloos);

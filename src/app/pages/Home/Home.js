@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Home.module.css';
-import Image from '../../components/Images/Image';
 import Button from '../../components/Button/Button';
 import Feature from '../../components/Feature/Feature';
+import { withRouter } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -26,4 +26,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default withRouter(Home);
