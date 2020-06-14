@@ -1,12 +1,11 @@
 .container {
-    /* height: 820px; */
     margin: 0;
 }
 
 .top {
-    background: url('../../assets/SVG/bglight_final.svg');
+    background: url('../../assets/SVG/newbg.svg');
     background-size: cover;
-    height: inherit;
+    height: 1068px;
 }
 
 .caption {
@@ -36,7 +35,32 @@
     margin-left: 120px;
 }
 
-.bottom {
+.features {
     display: flex;
     justify-content: space-evenly;
+    background-color: var(--dark-blue);
+    padding-bottom: 24px;
+}
+
+.quote {
+    font-style: italic;
+    font-family: 'Jost', sans-serif;
+    color: var(--light-blue);
+    font-size: 18px;
+    padding: 24px 64px 24px 64px;
+    background-color: var(--dark-blue);
+}
+
+.seal {
+    display: flex;
+    background-color: var(--dark-blue);
+    font-family: 'Jost', sans-serif;
+    color: var(--light-blue);
+    align-items: center;
+    justify-content: center;
+}
+
+.sealText {
+    width: 300px;
+    padding-left: 40px;
 }
