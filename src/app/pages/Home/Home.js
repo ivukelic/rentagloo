@@ -3,12 +3,14 @@ import styles from './Home.module.css';
 import Button from '../../components/Button/Button';
 import Feature from '../../components/Feature/Feature';
 import Image from '../../components/Images/Image';
+import Section from 'Components/Section/Section';
+
 import { withRouter } from 'react-router-dom';
 
 const Home = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.top}>
+            <Section className={styles.top}>
                 <div className={styles.caption}>RENTAGLOO YO</div>
                 <div className={styles.text}>
                     Random gibberish just to fill the space
@@ -16,7 +18,7 @@ const Home = () => {
                 <Button className={styles.discover}>
                     Check dis shit out (Discover)
                 </Button>
-            </div>
+            </Section>
             <div className={styles.features}>
                 <Feature
                     src="aurora"
