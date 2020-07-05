@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from '../Images/Image';
-import styles from './Feature.module.css';
+import Image from 'Components/Images/Image';
+import styles from 'Components/Feature/Feature.module.css';
 
 const Feature = ({ src, info }) => {
     return (

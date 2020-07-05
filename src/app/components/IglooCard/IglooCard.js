@@ -1,8 +1,9 @@
 import React from 'react';
 import Button from 'Components/Button/Button';
-import styles from './IglooCard.module.css';
+import styles from 'Components/IglooCard/IglooCard.module.css';
 import pic from 'Assets/pic.png';
-import esvigji from 'Assets/pengu.svg';
+
+//TODO : use this in igloo page
 
 const IglooCard = () => {
     return (

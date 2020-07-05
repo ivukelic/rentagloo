@@ -21,8 +21,6 @@
 }
 
 .caption {
-    /* padding-top: 200px;
-    padding-left: 120px; */
     font-weight: bold;
     font-size: 48px;
     font-family: 'Jost', sans-serif;
@@ -50,7 +48,6 @@
 .features {
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--dark-blue);
     padding-bottom: 24px;
 }
 
@@ -60,12 +57,10 @@
     color: var(--light-blue);
     font-size: 18px;
     padding: 24px 64px 24px 64px;
-    background-color: var(--dark-blue);
 }
 
 .seal {
     display: flex;
-    background-color: var(--dark-blue);
     font-family: 'Jost', sans-serif;
     color: var(--light-blue);
     align-items: center;

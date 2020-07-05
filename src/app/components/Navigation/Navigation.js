@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../Button/Button';
-import styles from './Navigation.module.css';
+import Button from 'Components/Button/Button';
+import styles from 'Components/Navigation/Navigation.module.css';
 
 const Navigation = () => {
     return (

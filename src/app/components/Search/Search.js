@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import Button from '../Button/Button';
+import Button from 'Components/Button/Button';
+
+//TODO : see if it's gonna be used in the future
 
 const Search = () => {
     const [startDate, setStartDate] = useState(new Date());

@@ -1,41 +1,10 @@
 import React, { useState } from 'react';
-import Button from '../../components/Button/Button';
-import styles from './Igloos.module.css';
-import Image from '../../components/Images/Image';
+import Button from 'Components/Button/Button';
+import styles from 'Pages/Igloos/Igloos.module.css';
+import Image from 'Components/Images/Image';
 import { withRouter } from 'react-router-dom';
 
-const Igloos = () => {
-    let igloos = [
-        {
-            id: 0,
-            name: 'Starry sky',
-            fact1: 'Cheapest option out there',
-            fact2: 'Enjoy the evening under the stars',
-            pic: 'stars',
-        },
-        {
-            id: 1,
-            name: 'Aurora Borealis',
-            fact1: 'Some fancy night crap',
-            fact2: 'You can see it once in a blue moon',
-            pic: 'aurora',
-        },
-        {
-            id: 2,
-            name: 'Boba',
-            fact1: 'Experience the jacuzzi',
-            fact2: 'Bubbles everywhere, bubble tea is a bonus',
-            pic: 'boba',
-        },
-        {
-            id: 3,
-            name: 'Bubble gum',
-            fact1: 'Most luxurious summer destination',
-            fact2: 'Sun is up all day, all night',
-            pic: 'bubblegum',
-        },
-    ];
-
+const Igloos = ({ igloos }) => {
     const [currentIgloo, setCurrentIgloo] = useState(igloos[0]);
 
     var index = currentIgloo.id;

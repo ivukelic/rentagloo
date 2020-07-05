@@ -1,7 +1,7 @@
 import React from 'react';
-import Button from '../Button/Button';
-import styles from './Footer.module.css';
-import Image from '../Images/Image';
+import Button from 'Components/Button/Button';
+import styles from 'Components/Footer/Footer.module.css';
+import Image from 'Components/Images/Image';
 
 const Footer = () => {
     return (
