@@ -27,12 +27,12 @@
 }
 
 .text {
-    /* padding-left: 120px; */
     font-size: 32px;
     font-family: 'Jost', sans-serif;
 }
 
 .discover {
+    display: inline-block;
     background-color: unset;
     border: 2px var(--lilac) solid;
     border-radius: 5px;
@@ -42,7 +42,7 @@
     font-size: 16px;
     cursor: pointer;
     color: var(--violet);
-    margin-left: 120px;
+    text-decoration: none;
 }
 
 .features {
@@ -65,9 +65,4 @@
     color: var(--light-blue);
     align-items: center;
     justify-content: center;
-}
-
-.sealText {
-    width: 300px;
-    padding-left: 40px;
 }

@@ -2,12 +2,15 @@ import React from 'react';
 import Button from 'Components/Button/Button';
 import styles from 'Components/Footer/Footer.module.css';
 import Image from 'Components/Images/Image';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div className={styles.footer}>
             <div className={styles.top}>
-                <div className={styles.logo}>Rentagloo</div>
+                <Link className={styles.logo} to="/">
+                    Rentagloo
+                </Link>
                 <div className={styles.column}>
                     Company
                     <Button className={styles.button}>About</Button>

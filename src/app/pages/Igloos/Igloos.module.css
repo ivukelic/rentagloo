@@ -4,9 +4,6 @@
     display: flex;
     flex-direction: column;
     background-color: var(--dark-blue);
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 80px;
 }
 
 .slideshow {
@@ -14,10 +11,6 @@
     flex-direction: row;
     justify-content: center;
     place-content: space-between;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 .btnScroll {
@@ -85,5 +78,25 @@
 }
 
 .btnReservation:focus {
+    outline: none;
+}
+
+.preview {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+.thumbnail {
+    height: 150px;
+}
+
+.button:focus {
     outline: none;
 }

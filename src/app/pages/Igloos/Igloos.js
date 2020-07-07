@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from 'Components/Button/Button';
 import styles from 'Pages/Igloos/Igloos.module.css';
 import Image from 'Components/Images/Image';
+import Section from 'Components/Section/Section';
 import { withRouter } from 'react-router-dom';
 
 const Igloos = ({ igloos }) => {
@@ -11,27 +12,29 @@ const Igloos = ({ igloos }) => {
 
     const handleLeftClick = () => {
         if (index == 0) {
-            setCurrentIgloo(igloos[3]);
+            setCurrentIgloo(igloos[igloos.length - 1]);
         } else {
             setCurrentIgloo(igloos[index - 1]);
         }
     };
 
     const handleRightClick = () => {
-        if (index == 3) {
+        if (index == igloos.length - 1) {
             setCurrentIgloo(igloos[0]);
         } else {
             setCurrentIgloo(igloos[index + 1]);
         }
     };
 
-    const handleThumbnailClick = () => {};
+    const handleThumbnailClick = (index) => () => {
+        setCurrentIgloo(igloos[index]);
+    };
 
     const thumbnails = igloos.map((igloo) => igloo.pic);
 
     return (
         <div className={styles.container}>
-            <div className={styles.slideshow}>
+            <Section className={styles.slideshow}>
                 <Button onClick={handleLeftClick} className={styles.btnScroll}>
                     <Image src="left" />
                 </Button>
@@ -41,15 +44,19 @@ const Igloos = ({ igloos }) => {
                 <Button onClick={handleRightClick} className={styles.btnScroll}>
                     <Image src="right" />
                 </Button>
-            </div>
-            <div className={styles.preview}>
+            </Section>
+            <Section className={styles.preview}>
                 {igloos.map((igloo, index) => (
-                    <Button onClick={handleThumbnailClick(index)} key={index}>
-                        <Image src={igloo.pic} />
+                    <Button
+                        onClick={handleThumbnailClick(index)}
+                        key={index}
+                        className={styles.button}
+                    >
+                        <Image src={igloo.pic} className={styles.thumbnail} />
                     </Button>
                 ))}
-            </div>
-            <div className={styles.data}>
+            </Section>
+            <Section className={styles.data}>
                 <div className={styles.info}>
                     <div className={styles.name}>{currentIgloo.name}</div>
                     <div className={styles.fact}>{currentIgloo.fact1}</div>
@@ -60,7 +67,7 @@ const Igloos = ({ igloos }) => {
                         Click here to make reservation
                     </Button>
                 </div>
-            </div>
+            </Section>
         </div>
     );
 };
