@@ -1,19 +1,24 @@
 import React from 'react';
+import styles from './index.module.css';
 
-const Title = () => {
-    return <div>Put components in here. fala.</div>;
+const Title = ({ children }) => {
+    return <div className={styles.title}>{children}</div>;
 };
 
-const Heading = () => {
-    return <div>Put components in here. fala.</div>;
+const Heading = ({ children }) => {
+    return <div className={styles.heading}>{children}</div>;
 };
 
-const Lead = () => {
-    return <div>Put components in here. fala.</div>;
+const Lead = ({ children }) => {
+    return <div className={styles.lead}>{children}</div>;
 };
 
-const Text = () => {
-    return <div>Put components in here. fala.</div>;
+const Text = ({ children }) => {
+    return <div className={styles.text}>{children}</div>;
 };
 
-export { Title, Heading, Lead, Text };
+const Quote = ({ children }) => {
+    return <div className={styles.quote}>{children}</div>;
+};
+
+export { Title, Heading, Lead, Text, Quote };

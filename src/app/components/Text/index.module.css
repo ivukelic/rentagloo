@@ -1,0 +1,28 @@
+.title {
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'Jost', sans-serif;
+}
+
+.heading {
+    font-size: 32px;
+    font-family: 'Jost', sans-serif;
+}
+
+.lead {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+}
+
+.text {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+.quote {
+    font-style: italic;
+    font-family: 'Jost', sans-serif;
+    color: var(--light-blue);
+    font-size: 18px;
+}

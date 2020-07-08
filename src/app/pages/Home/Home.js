@@ -5,42 +5,32 @@ import ImageCard from 'Components/ImageCard/ImageCard';
 import Section from 'Components/Section/Section';
 import { withRouter, Link } from 'react-router-dom';
 import Translation from 'Components/Translation/Translation';
-// TODO: separate components
+import { Title, Heading, Quote } from 'Components/Text';
 
 const Home = () => {
     return (
         <div className={styles.container}>
             <Section backgroundClass={styles.top}>
-                <div className={styles.caption}>RENTAGLOO YO</div>
-                <div className={styles.text}>
-                    Random gibberish just to fill the space
-                </div>
+                <Title>RENTAGLOO</Title>
+                <Heading>
+                    <Translation id="header" />
+                </Heading>
                 <Link to="/igloos" className={styles.discover}>
-                    <Translation id="crab" />
+                    <Translation id="discover" />
                 </Link>
             </Section>
             <Section className={styles.features} preset="dark-blue">
-                <Feature
-                    src="aurora"
-                    info="With our new way of collecting fish points, you can earn massive discounts on your stay with Rentagloo"
-                />
-                <Feature src="aurora" info="Random pile of text 2" />
-                <Feature src="aurora" info="Random pile of text 3" />
+                <Feature src="aurora" info="feature1" />
+                <Feature src="bubblegum" info="feature2" />
+                <Feature src="stars" info="feature3" />
             </Section>
             <Section className={styles.quote} preset="dark-blue">
-                {/* <Content id='home.info.quote.text' /> { useContent('crap.crap2.crap3.text) } */}
-                Penguins (order Sphenisciformes, family Spheniscidae) are a
-                group of aquatic birds. They live almost exclusively in the
-                Southern Hemisphere, with only one species, the Galápagos
-                penguin, found north of the equator. Highly adapted for life in
-                the water, penguins have countershaded dark and white plumage
-                and flippers for swimming. Most penguins feed on krill, fish,
-                squid and other forms of sea life which they catch while
-                swimming underwater. They spend roughly half of their lives on
-                land and the other half in the sea.
+                <Quote>
+                    <Translation id="penguinText" />
+                </Quote>
             </Section>
             <Section className={styles.seal} preset="dark-blue">
-                <ImageCard imageSrc="pic" info="god pls send help" />
+                <ImageCard imageSrc="pic" info="seal" />
             </Section>
             <div className={styles.bottom}></div>
         </div>
