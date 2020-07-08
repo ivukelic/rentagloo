@@ -59,8 +59,8 @@ const Igloos = ({ igloos }) => {
             <Section className={styles.data}>
                 <div className={styles.info}>
                     <div className={styles.name}>{currentIgloo.name}</div>
-                    <div className={styles.fact}>{currentIgloo.fact1}</div>
-                    <div className={styles.fact}>{currentIgloo.fact2}</div>
+                    <div className={styles.fact}>❄{currentIgloo.fact1}</div>
+                    <div className={styles.fact}>❄{currentIgloo.fact2}</div>
                 </div>
                 <div className={styles.buttonContainer}>
                     <Button className={styles.btnReservation}>
