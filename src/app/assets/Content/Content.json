@@ -32,6 +32,11 @@
         "igloos": "Igloos",
         "about": "About",
         "contact": "Contact",
-        "construction": "Sorry, this page is still under construction"
+        "construction": "Sorry, this page is still under construction",
+        "ceo": "As a CEO of rentaglo, my main goal is to provide the best possible solution for all my clients' needs and I will do whatever it takes to achieve that.",
+        "company": "Company",
+        "links": "Useful links",
+        "fpoints": "Fish points",
+        "random": "Random link"
     }
 }

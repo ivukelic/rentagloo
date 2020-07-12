@@ -10,12 +10,16 @@
     justify-content: space-evenly;
 }
 
-.logo {
+.logoText {
     font-family: 'Jost', sans-serif;
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
     color: black;
+}
+
+.logoIcon {
+    height: 64px;
 }
 
 .column {
@@ -36,6 +40,8 @@
     font-size: 16px;
     cursor: pointer;
     color: var(--grey);
+    text-decoration: none;
+    margin-right: 8px;
 }
 
 .button:focus {

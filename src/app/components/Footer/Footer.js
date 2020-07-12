@@ -9,24 +9,41 @@ const Footer = () => {
     return (
         <div className={styles.footer}>
             <div className={styles.top}>
-                <Link className={styles.logo} to="/">
+                <Link className={styles.logoText} to="/">
                     Rentagloo
+                    <Image className={styles.logoIcon} src="logo_bw" />
                 </Link>
                 <div className={styles.column}>
-                    Company
-                    <Button className={styles.button}>About</Button>
-                    <Button className={styles.button}>Contact</Button>
+                    <Translation id="company" />
+                    <Link to="/about" className={styles.button}>
+                        <Translation id="about" />
+                    </Link>
+                    <Link to="/contact" className={styles.button}>
+                        <Translation id="contact" />
+                    </Link>
                 </div>
                 <div className={styles.column}>
-                    Useful links
-                    <Button className={styles.button}>Fish points</Button>
-                    <Button className={styles.button}>Radndom</Button>
+                    <Translation id="links" />
+                    <Link to="ponts" className={styles.button}>
+                        <Translation id="fpoints" />
+                    </Link>
+                    <Link to="/random" className={styles.button}>
+                        <Translation id="random" />
+                    </Link>
                 </div>
                 <div className={styles.icons}>
-                    <Button className={styles.button}>
+                    <a
+                        className={styles.button}
+                        href="https://github.com/ivukelic/rentagloo"
+                    >
                         <Image className={styles.image} src="git" />
-                    </Button>
-                    <Button className={styles.button}>Lonkdin</Button>
+                    </a>
+                    <a
+                        className={styles.button}
+                        href="https://www.linkedin.com/in/iva-vukelic-5985ba152/"
+                    >
+                        <Image className={styles.image} src="linkedin" />
+                    </a>
                 </div>
             </div>
             <div className={styles.bottom}>

@@ -13,6 +13,7 @@ import logo from 'Assets/Logo/igloo_logo.svg';
 import bab from 'Assets/Logo/babson.svg';
 import git_white from 'Assets/Logo/github-white.png';
 import ceo from 'Assets/Images/ceo.jpg';
+import linkedin from 'Assets/Logo/linkedin.png';
 
 export {
     pic,
@@ -30,4 +31,5 @@ export {
     bab,
     git_white,
     ceo,
+    linkedin,
 };
