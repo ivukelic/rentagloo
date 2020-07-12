@@ -41,7 +41,6 @@
 }
 
 .seal {
-    display: flex;
     font-family: 'Jost', sans-serif;
     color: var(--light-blue);
     align-items: center;
