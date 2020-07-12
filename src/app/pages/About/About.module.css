@@ -1,0 +1,40 @@
+.container {
+    text-align: center;
+}
+
+.image {
+    width: 400px;
+}
+
+.dataContainer {
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.button {
+    display: inline-block;
+    background-color: unset;
+    border: 2px var(--lilac) solid;
+    border-radius: 5px;
+    padding: 12px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--violet);
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+
+.section {
+    padding-top: 88px;
+}
+
+.font {
+    color: var(--violet);
+}
+
+.info {
+    color: var(--mauve);
+}

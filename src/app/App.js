@@ -9,6 +9,8 @@ import Data from 'Assets/Data/Data.json';
 import Navigation from 'Components/Navigation/Navigation';
 import { TranslationProvider } from 'Components/Translation/TranslationProvider';
 import Stylesguide from 'Pages/Styleguide/Styleguide';
+import NotFound from 'Pages/NotFound/NotFound';
+import Contact from 'Pages/Contact/Contact';
 
 const App = () => {
     const history = createBrowserHistory();
@@ -26,11 +28,22 @@ const App = () => {
                             <Igloos igloos={Data.igloos} />
                         </Route>
                         <Route exact path="/about">
-                            About
                             <About />
+                        </Route>
+                        <Route exact path="/contact">
+                            <Contact />
                         </Route>
                         <Route exact path="/styleguide">
                             <Stylesguide />
+                        </Route>
+                        <Route exact path="/fishpoints">
+                            <NotFound />
+                        </Route>
+                        <Route exact path="/random">
+                            <NotFound />
+                        </Route>
+                        <Route exact path="/reservation">
+                            <NotFound />
                         </Route>
                     </Switch>
                     <Footer />

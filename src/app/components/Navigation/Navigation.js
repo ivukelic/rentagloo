@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Button from 'Components/Button/Button';
 import styles from 'Components/Navigation/Navigation.module.css';
+import Image from 'Components/Images/Image';
+import Translation from 'Components/Translation/Translation';
+
 import { Link, useHistory } from 'react-router-dom';
 
 const Navigation = () => {
@@ -17,19 +19,26 @@ const Navigation = () => {
 
     return (
         <div className={styles.nav}>
-            <div>{!isHomePage && <Link to="/">Rentaglu</Link>}</div>
+            <div className={styles.logo}>
+                {!isHomePage && (
+                    <div className={styles.arrange}>
+                        <Link className={styles.navItem} to="/">
+                            Rentaglu
+                            <Image src="logo" className={styles.image} />
+                        </Link>
+                    </div>
+                )}
+            </div>
             <div className={styles.container}>
                 <Link className={styles.navItem} to="/igloos">
-                    Igloos
+                    <Translation id="igloos" />
                 </Link>
-
                 <Link className={styles.navItem} to="/about">
-                    About
+                    <Translation id="about" />
                 </Link>
-
-                <Button className={styles.navItem} to="/contact">
-                    Contact
-                </Button>
+                <Link className={styles.navItem} to="/contact">
+                    <Translation id="contact" />
+                </Link>
             </div>
         </div>
     );

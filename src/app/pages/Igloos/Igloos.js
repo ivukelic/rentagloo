@@ -3,7 +3,7 @@ import Button from 'Components/Button/Button';
 import styles from 'Pages/Igloos/Igloos.module.css';
 import Image from 'Components/Images/Image';
 import Section from 'Components/Section/Section';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 const Igloos = ({ igloos }) => {
     const [currentIgloo, setCurrentIgloo] = useState(igloos[0]);
@@ -63,9 +63,9 @@ const Igloos = ({ igloos }) => {
                     <div className={styles.fact}>❄{currentIgloo.fact2}</div>
                 </div>
                 <div className={styles.buttonContainer}>
-                    <Button className={styles.btnReservation}>
+                    <Link to="reservation" className={styles.btnReservation}>
                         Click here to make reservation
-                    </Button>
+                    </Link>
                 </div>
             </Section>
         </div>

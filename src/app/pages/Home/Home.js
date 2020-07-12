@@ -30,6 +30,7 @@ const Home = () => {
                 </Quote>
             </Section>
             <Section className={styles.seal} preset="dark-blue">
+                <ImageCard imageSrc="ceo" info="ceo" />
                 <ImageCard imageSrc="pic" info="seal" />
             </Section>
             <div className={styles.bottom}></div>

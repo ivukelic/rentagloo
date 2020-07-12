@@ -3,6 +3,7 @@ import Button from 'Components/Button/Button';
 import styles from 'Components/Footer/Footer.module.css';
 import Image from 'Components/Images/Image';
 import { Link } from 'react-router-dom';
+import Translation from 'Components/Translation/Translation';
 
 const Footer = () => {
     return (
