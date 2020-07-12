@@ -1,0 +1,9 @@
+:root {
+    --max: 1600px;
+    --xxl: 1200px;
+    --xl: 1000px;
+    --lg: 800px;
+    --md: 600px;
+    --sm: 400px;
+    --min: 300px;
+}

@@ -14,6 +14,7 @@ import bab from 'Assets/Logo/babson.svg';
 import git_white from 'Assets/Logo/github-white.png';
 import ceo from 'Assets/Images/ceo.jpg';
 import linkedin from 'Assets/Logo/linkedin.png';
+import me from 'Assets/Images/me.jpg';
 
 export {
     pic,
@@ -32,4 +33,5 @@ export {
     git_white,
     ceo,
     linkedin,
+    me,
 };

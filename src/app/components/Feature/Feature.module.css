@@ -1,6 +1,7 @@
 .container {
     text-align: center;
-    background-color: var(--lilac);
+    background-color: var(--violet);
+    color: var(--grey);
     border-radius: 5px;
     width: 250px;
 }
@@ -14,4 +15,5 @@
 .info {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
+    padding: 6px;
 }

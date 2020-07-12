@@ -6,6 +6,8 @@ import Section from 'Components/Section/Section';
 import { withRouter, Link } from 'react-router-dom';
 import Translation from 'Components/Translation/Translation';
 import { Title, Heading, Quote } from 'Components/Text';
+import InfoCard from 'Components/InfoCard/InfoCard';
+import { Lead } from '../../components/Text';
 
 const Home = () => {
     return (
@@ -25,13 +27,26 @@ const Home = () => {
                 <Feature src="stars" info="feature3" />
             </Section>
             <Section className={styles.quote} preset="dark-blue">
-                <Quote>
+                <Lead>
                     <Translation id="penguinText" />
-                </Quote>
+                </Lead>
             </Section>
             <Section className={styles.seal} preset="dark-blue">
-                <ImageCard imageSrc="ceo" info="ceo" />
-                <ImageCard imageSrc="pic" info="seal" />
+                <InfoCard imgSrc="ceo" imgClass={styles.quoteImg}>
+                    <Quote>
+                        <h2>
+                            <Translation id="ceo" />
+                        </h2>
+                    </Quote>
+                </InfoCard>
+                <br />
+                <InfoCard imgSrc="pic" imgClass={styles.quoteImg} isFlipped>
+                    <Quote>
+                        <h2>
+                            <Translation id="seal" />
+                        </h2>
+                    </Quote>
+                </InfoCard>
             </Section>
             <div className={styles.bottom}></div>
         </div>

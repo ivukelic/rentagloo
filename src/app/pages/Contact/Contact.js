@@ -8,10 +8,16 @@ const Contact = () => {
         <div>
             <Section className={styles.section} preset="dark-blue">
                 <Title className={styles.font}>Ways to contact me</Title>
+                <br />
                 <Text>Email: ivavukelic.gm@gmail.com</Text>
                 <Text>Phone: 066499056378</Text>
                 <Text>
-                    LinkedIn: https://www.linkedin.com/in/iva-vukelic-5985ba152/
+                    <a
+                        className={styles.link}
+                        href="https://www.linkedin.com/in/iva-vukelic-5985ba152/"
+                    >
+                        LinkedIn
+                    </a>
                 </Text>
             </Section>
         </div>

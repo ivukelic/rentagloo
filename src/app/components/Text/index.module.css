@@ -13,6 +13,8 @@
     font-family: 'Jost', sans-serif;
     font-size: 24px;
     font-weight: bold;
+    color: var(--violet);
+    padding: 100px 0px;
 }
 
 .text {
@@ -24,6 +26,22 @@
 .quote {
     font-style: italic;
     font-family: 'Jost', sans-serif;
-    color: var(--light-blue);
+    color: var(--grey);
     font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.content {
+    padding: 0px 10px;
+    margin: 0px;
+}
+
+.tick {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
 }

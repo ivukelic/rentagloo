@@ -1,0 +1,14 @@
+.infoCard {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.infoCard.isFlipped {
+    direction: rtl;
+}
+
+@media screen and (min-width: 650px) {
+    .infoCard {
+        grid-template-columns: 1fr 1fr;
+    }
+}

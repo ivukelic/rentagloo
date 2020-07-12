@@ -1,9 +1,8 @@
-@import '../../utils/colorTheme.module.css';
-
 .container {
     display: flex;
     flex-direction: column;
     background-color: var(--dark-blue);
+    min-height: 85vh;
 }
 
 .slideshow {
@@ -11,6 +10,7 @@
     flex-direction: row;
     justify-content: center;
     place-content: space-between;
+    padding-top: 128px !important;
 }
 
 .btnScroll {
@@ -34,12 +34,22 @@
 
 .image {
     object-fit: contain;
-    width: 600px;
-    height: 600px;
+    width: 256px;
+    height: 256px;
 }
 
 .data {
-    display: flex;
+    display: block;
+}
+
+@media screen and (min-width: 650px) {
+    .data {
+        display: flex;
+    }
+
+    .btnReservation {
+        margin-top: 0px;
+    }
 }
 
 .info {
@@ -75,6 +85,9 @@
     font-size: 16px;
     cursor: pointer;
     color: var(--grey);
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 6px;
 }
 
 .btnReservation:focus {
@@ -82,9 +95,16 @@
 }
 
 .preview {
-    width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 800px) {
+    .image {
+        width: 600px;
+        height: 600px;
+    }
 }
 
 .button {

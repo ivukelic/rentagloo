@@ -30,8 +30,6 @@ const Igloos = ({ igloos }) => {
         setCurrentIgloo(igloos[index]);
     };
 
-    const thumbnails = igloos.map((igloo) => igloo.pic);
-
     return (
         <div className={styles.container}>
             <Section className={styles.slideshow}>

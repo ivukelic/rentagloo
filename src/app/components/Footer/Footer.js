@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.column}>
                     <Translation id="links" />
-                    <Link to="ponts" className={styles.button}>
+                    <Link to="/points" className={styles.button}>
                         <Translation id="fpoints" />
                     </Link>
                     <Link to="/random" className={styles.button}>

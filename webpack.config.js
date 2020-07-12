@@ -48,28 +48,8 @@ module.exports = {
                     },
                 },
             },
-            // {
-            //     test: /\.(css|pcss)$/,
-            //     use: [
-            //         { loader: MiniCssExtractPlugin.loader },
-            //         {
-            //             loader: 'css-loader',
-            //             options: {
-            //                 importLoaders: 1,
-            //                 modules: true,
-            //             },
-            //         },
-            //         {
-            //             loader: 'postcss-loader',
-            //             options: {
-            //                 ident: 'postcss',
-            //                 modules: true,
-            //             },
-            //         },
-            //     ],
-            // },
             {
-                test: /.(scss|css)$/,
+                test: /.(css)$/,
                 use: [
                     {
                         loader: 'style-loader',

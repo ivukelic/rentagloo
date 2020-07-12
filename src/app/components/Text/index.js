@@ -27,7 +27,10 @@ const Text = ({ children, className }) => {
 
 const Quote = ({ children, className }) => {
     return (
-        <div className={`${styles.quote} ${className || ''}`}>{children}</div>
+        <div className={`${styles.quote} ${className || ''}`}>
+            <p className={styles.tick}>❞</p>
+            <p className={styles.content}>{children}</p>
+        </div>
     );
 };
 

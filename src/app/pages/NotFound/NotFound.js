@@ -1,17 +1,19 @@
 import React from 'react';
 import styles from './NotFound.module.css';
-import { Title } from 'Components/Text';
 import Image from 'Components/Images/Image';
 import Section from 'Components/Section/Section';
-import Translation from 'Components/Translation/Translation';
+import Chapter from 'Components/Chapter/Chapter';
 
 const NotFound = () => {
     return (
         <div>
             <Section className={styles.container} preset="dark-blue">
-                <Title>
-                    <Translation id="construction" />
-                </Title>
+                <Chapter
+                    title="notAvailable"
+                    heading="construction"
+                    preset="violet"
+                />
+                <br />
                 <Image className={styles.image} src="construction" />
             </Section>
         </div>

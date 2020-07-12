@@ -20,6 +20,13 @@
 
 .logoIcon {
     height: 64px;
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .logoIcon {
+        display: inline-block;
+    }
 }
 
 .column {

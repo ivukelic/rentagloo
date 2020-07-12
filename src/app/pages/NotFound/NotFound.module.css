@@ -1,8 +1,15 @@
 .container {
     text-align: center;
     padding-top: 120px;
+    min-height: 90vh;
 }
 
 .image {
-    height: 600px;
+    height: 320px;
+}
+
+@media screen and (min-width: 650px) {
+    .image {
+        height: 600px;
+    }
 }

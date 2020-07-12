@@ -12,6 +12,9 @@ import Stylesguide from 'Pages/Styleguide/Styleguide';
 import NotFound from 'Pages/NotFound/NotFound';
 import Contact from 'Pages/Contact/Contact';
 
+import './utils/breakpoints.module.css';
+import './utils/colorTheme.module.css';
+
 const App = () => {
     const history = createBrowserHistory();
 
@@ -36,7 +39,7 @@ const App = () => {
                         <Route exact path="/styleguide">
                             <Stylesguide />
                         </Route>
-                        <Route exact path="/fishpoints">
+                        <Route exact path="/points">
                             <NotFound />
                         </Route>
                         <Route exact path="/random">

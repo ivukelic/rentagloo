@@ -3,32 +3,67 @@
 }
 
 .image {
-    width: 400px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-.dataContainer {
-    padding-top: 24px;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
+.skillsContainer,
+.bioContainer {
+    padding-bottom: 64px;
+}
+
+.skillsContainer {
+    padding-top: 42px;
+}
+
+.bioContainer {
+    margin-top: -64px;
+}
+
+@media screen and (min-width: 800px) {
+    .image {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .image {
+        width: 300px;
+    }
+
+    .bioContainer {
+        margin-top: 0px;
+    }
+
+    .skillsContainer {
+        padding-top: 0px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .image {
+        width: 250px;
+    }
 }
 
 .button {
     display: inline-block;
     background-color: unset;
-    border: 2px var(--lilac) solid;
+    border: 2px var(--violet) solid;
     border-radius: 5px;
     padding: 12px;
     font-family: 'Jost', sans-serif;
     text-transform: uppercase;
     font-size: 16px;
     cursor: pointer;
-    color: var(--violet);
+    color: var(--lilac);
     text-decoration: none;
     margin-bottom: 24px;
 }
 
 .section {
-    padding-top: 88px;
+    padding: 200px 10px 64px 10px;
 }
 
 .font {

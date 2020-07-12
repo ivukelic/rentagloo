@@ -23,7 +23,7 @@ const Navigation = () => {
                 {!isHomePage && (
                     <div className={styles.arrange}>
                         <Link className={styles.navItem} to="/">
-                            Rentaglu
+                            Rentagloo
                             <Image src="logo" className={styles.image} />
                         </Link>
                     </div>
